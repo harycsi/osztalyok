@@ -32,9 +32,9 @@ export default class Pokemon{   //default használata, ha csak 1 clas van itt
             const pokemon = await response.json()
             console.log(pokemon)
             const pokemonKepe = pokemon.sprites.front_default
-            const kep = document.createElement("img")
-            kep.src = pokemonKepe
-            document.body.append(kep)
+            this.img= document.createElement("kep")
+            img.src = pokemonKepe
+            document.body.append(img)
         })
     }
 }
